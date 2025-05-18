@@ -1,0 +1,45 @@
+commond=""
+started=False
+
+while commond.lower() !="exit":
+    commond= input(">").lower()
+
+    if commond=="help":
+     print("""
+start ~~ to 
+stop
+exit           
+""")
+    
+    elif commond=="start" :
+     if started:
+        print("the car is alredy started.")
+     else:
+        started=True
+        print("Your game is started")
+
+
+    elif commond=="stop":
+       if not started:
+          print("The is alredy stoped")
+       else:
+          started=False
+          print("Your game was stoped.")
+
+    elif commond=="end":
+        print("Your game ended")
+
+    elif commond=="quit":
+       break
+        
+
+    
+    else:
+       print("Idk")
+
+           
+
+else:
+   print("Exit...")
+
+
